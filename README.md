@@ -11,5 +11,5 @@ npm init -y
 npm install --save-dev webpack
 npm install --save-dev webpack@<version>
 
->npm install clean-webpack-plugin --save-dev
->npm run build
+>npm install --save-dev webpack-dev-server
+>npm start

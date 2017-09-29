@@ -8,5 +8,5 @@ npm init -y
 npm install --save-dev webpack
 npm install --save-dev webpack@<version>
 
->npm install --save-dev csv-loader xml-loader
+>npm install --save-dev html-webpack-plugin
 >npm run build

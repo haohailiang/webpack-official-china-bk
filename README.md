@@ -8,4 +8,4 @@ npm init -y
 npm install --save-dev webpack
 npm install --save-dev webpack@<version>
 
->webpack src/index.js dist/bundle.js
+>webpack --config webpack.config.js

@@ -8,4 +8,4 @@ npm init -y
 npm install --save-dev webpack
 npm install --save-dev webpack@<version>
 
->webpack --config webpack.config.js
+>npm run build

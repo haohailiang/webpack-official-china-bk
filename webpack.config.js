@@ -1,5 +1,4 @@
 const path = require('path');
-const SRC_PATH = path.resolve(__dirname, 'src');
 
 module.exports = {
   entry: './src/index.js',
@@ -15,14 +14,18 @@ module.exports = {
           'style-loader',
           'css-loader'
         ],
-        include: SRC_PATH
       },
       {
         test: /\.(png|svg|jpg|gif)$/,
         use: [
           'file-loader'
         ],
-        include: SRC_PATH
+      },
+      {
+        test: /\.(woff|woff2|eot|ttf|otf)$/,
+        use: [
+          'file-loader'
+        ]
       }
     ]
   }

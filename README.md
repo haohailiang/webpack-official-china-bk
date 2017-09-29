@@ -7,3 +7,5 @@ npm init -y
 #安装最新版本或特定版本
 npm install --save-dev webpack
 npm install --save-dev webpack@<version>
+
+>webpack src/index.js dist/bundle.js

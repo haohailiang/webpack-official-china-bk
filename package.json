@@ -9,20 +9,20 @@
     "server": "node server.js",
     "build": "webpack"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/haohailiang/webpack-official-china.git"
+  },
   "keywords": [],
   "author": "haohailiang",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/haohailiang/webpack-official-china/issues"
+  },
+  "homepage": "https://github.com/haohailiang/webpack-official-china#readme",
   "devDependencies": {
-    "clean-webpack-plugin": "^0.1.17",
-    "css-loader": "^0.28.7",
-    "express": "^4.16.0",
-    "html-webpack-plugin": "^2.30.1",
-    "style-loader": "^0.18.2",
     "webpack": "^3.6.0",
     "webpack-dev-middleware": "^1.12.0",
     "webpack-dev-server": "^2.9.1"
-  },
-  "dependencies": {
-    "lodash": "^4.17.4"
   }
 }

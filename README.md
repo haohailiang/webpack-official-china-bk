@@ -13,3 +13,6 @@ npm install --save-dev webpack@<version>
 
 >npm install --save-dev style-loader css-loader
 >npm start
+
+>npm i --save-dev uglifyjs-webpack-plugin
+>npm run build

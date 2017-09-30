@@ -3,5 +3,6 @@ export function square(x) {
 }
 
 export function cube(x) {
+  error;
   return x * x * x;
 }

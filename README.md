@@ -16,3 +16,5 @@ npm install --save-dev webpack@<version>
 
 >npm i --save-dev uglifyjs-webpack-plugin
 >npm run build
+
+>npm install --save-dev webpack-merge

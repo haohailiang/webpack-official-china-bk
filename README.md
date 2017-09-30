@@ -11,5 +11,5 @@ npm init -y
 npm install --save-dev webpack
 npm install --save-dev webpack@<version>
 
->npm install --save-dev webpack-dev-server
->npm start
+>npm install --save-dev express webpack-dev-middleware
+>npm run server

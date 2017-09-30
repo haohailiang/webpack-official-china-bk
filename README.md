@@ -12,4 +12,4 @@ npm install --save-dev webpack
 npm install --save-dev webpack@<version>
 
 >npm install --save-dev express webpack-dev-middleware
->npm run server
+>npm start

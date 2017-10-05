@@ -18,3 +18,6 @@ npm install --save-dev webpack@<version>
 >npm run build
 
 >npm install --save-dev webpack-merge
+
+>npm publish
+>npm unpublish [文件名] --force

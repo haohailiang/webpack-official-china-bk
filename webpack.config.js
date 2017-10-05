@@ -1,19 +1,17 @@
-var path = require('path');
+const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-  entry: './src/index.js',
+   entry: {
+    app:'./src/index.js',
+  },
+  plugins: [
+    new HtmlWebpackPlugin({
+      title: '配置文件修改名字'
+    })
+  ],
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: 'webpack-numbers.js',
-    library: 'webpackNumbers',
-    libraryTarget: 'umd'
+    filename: '[name].bundle.js',
   },
-  externals: {
-    lodash: {
-      commonjs: 'lodash',
-      commonjs2: 'lodash',
-      amd: 'lodash',
-      root: '_'
-    }
-  }
 };

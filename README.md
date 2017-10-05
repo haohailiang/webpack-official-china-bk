@@ -21,3 +21,7 @@ npm install --save-dev webpack@<version>
 
 >npm publish
 >npm unpublish [文件名] --force
+
+>使用自定义的插件
+>sudo cnpm i webpack-numbers-haohailiang --save
+>webpack编译使用

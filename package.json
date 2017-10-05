@@ -1,6 +1,6 @@
 {
-  "name": "webpack-numbers-haohailiang",
-  "version": "1.0.1",
+  "name": "webpack-official-china",
+  "version": "1.0.0",
   "description": "参考网址: https://doc.webpack-china.org/",
   "main": "dist/webpack-numbers.js",
   "scripts": {
@@ -24,7 +24,10 @@
     "babel-preset-es2015-webpack": "^6.4.3",
     "eslint": "^3.9.1",
     "eslint-loader": "^1.6.1",
-    "lodash": "^4.16.6",
+    "html-webpack-plugin": "^2.30.1",
     "webpack": "^2.2.1"
+  },
+  "dependencies": {
+    "webpack-numbers-haohailiang": "^1.0.1"
   }
 }

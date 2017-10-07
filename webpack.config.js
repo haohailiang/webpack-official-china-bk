@@ -1,11 +1,15 @@
+var webpack = require('webpack');
+var uglifyJsPlugin = webpack.optimize.UglifyJsPlugin;
 module.exports = {
   entry: './main.js',
   output: {
     filename: 'bundle.js'
   },
-  module: {
-    loaders:[
-      { test: /\.(png|jpg)$/, loader: 'url-loader?limit=8192'}
-    ]
-  }
-};
+  plugins: [
+    new uglifyJsPlugin({
+      compress: {
+        warnings: false
+      }
+    })
+  ]
+}

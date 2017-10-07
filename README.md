@@ -16,3 +16,7 @@ $ npm i webpack@1.x webpack-dev-server@1.x --save-dev
 $ npm install
 $ webpack-dev-server
 ```
+# 传递环境变量参数
+```
+$ env DEBUG=true webpack-dev-server
+```

@@ -8,6 +8,7 @@ module.exports = {
     output: {
         filename: 'bundle.js'
     },
+    devtool: 'eval-source-map',
 	// 这里是我们新添加的处理不同类型文件需要的 Loader
     module: {
     	rules: 
@@ -16,7 +17,7 @@ module.exports = {
     			use: 
     			[ 
 	    			{ loader: 'style-loader' }, 
-	    			{ loader: 'css-loader' } 
+	    			{ loader: 'css-loader?sourceMap' } 
 	    		]
     		}
     	]

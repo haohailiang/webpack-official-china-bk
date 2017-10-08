@@ -1,21 +1,30 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const webpack = require('webpack');
 
 module.exports = {
-  entry: { 
-    a: "./src/a.js", 
-    b: "./src/b.js" 
-  },
+  entry: './src/js/index.js',
   output: {
     path: __dirname + '/dist/',
     filename: '[name].bundle.js'
+  },
+  module: {
+      loaders: [
+        {
+            test: /\.css/,
+            loader:  'style-loader!css-loader'
+        }, 
+        {
+            test: /\.less/,
+            loader:  'style-loader!css-loader!less-loader'
+        }, 
+        {
+          test: /\.(png|jpg)$/,
+          loader: 'url-loader?limit=10000&name=build/[name].[ext]'
+        }
+      ]
   },
   plugins: [
     new HtmlWebpackPlugin({
       title: '配置文件修改名字'
     }),
-    new webpack.optimize.CommonsChunkPlugin({
-      name: 'common' // 指定公共 bundle 的名称。
-    })
   ]
 };

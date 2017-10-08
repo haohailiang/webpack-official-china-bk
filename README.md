@@ -5,3 +5,9 @@
 * [webpack指南](https://webpack.toobug.net/zh-cn/) | `TooBug` | 2015
 * [webpack-demos](https://github.com/ruanyf/webpack-demos) | `ruanyf` | 2016
 * [一小时包教会 —— webpack 入门指南](http://www.cnblogs.com/vajoy/p/4650467.html) | `VaJoy Larn` | 
+
+# 用到的命令
+```
+npm i file-loader less --save-dev
+npm i style-loader css-loader less-loader url-loader --save-dev
+```

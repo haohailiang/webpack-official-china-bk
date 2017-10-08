@@ -10,6 +10,5 @@
 
 ## Usage
 ```
-npm install webpack --save-dev
-webpack index.js bundle.js
+webpack
 ```

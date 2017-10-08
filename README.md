@@ -7,3 +7,9 @@
 * [一小时包教会 —— webpack 入门指南](http://www.cnblogs.com/vajoy/p/4650467.html) | `VaJoy Larn` | 
 * [Webpack傻瓜式指南（一）](http://zhuanlan.zhihu.com/FrontendMagazine/20367175) | `张轩` | 2016
 * [Webpack傻瓜式指南（二）](http://zhuanlan.zhihu.com/FrontendMagazine/20397902) | `张轩` | 2016
+
+## Usage
+```
+npm install webpack --save-dev
+webpack index.js bundle.js
+```

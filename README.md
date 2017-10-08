@@ -10,5 +10,7 @@
 
 ## Usage
 ```
-npm install style-loader css-loader --save-dev
+npm install html-webpack-plugin --save-dev
+webpack
 ```
+[HtmlWebpackPlugin定制](https://github.com/jantimon/html-webpack-plugin#configuration)

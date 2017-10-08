@@ -28,12 +28,6 @@ module.exports = {
         new webpack.HotModuleReplacementPlugin(),
         new HtmlWebpackPlugin({
             title: '自动生成HTML文件',
-        }),
-        //provide $, jQuery and window.jQuery to every script
-        new webpack.ProvidePlugin({
-          $: "jquery",
-          jQuery: "jquery",
-          "window.jQuery": "jquery"
         })
     ],
     devServer: {

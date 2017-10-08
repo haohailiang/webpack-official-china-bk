@@ -10,5 +10,11 @@
 
 ## Usage
 ```
-npm install --save-dev jquery
+npm install imports-loader --save-dev
 ```
+## TODO
+* [https://github.com/vikingmute/webpack-for-fools/blob/master/entries/chapter-2.md](https://github.com/vikingmute/webpack-for-fools/blob/master/entries/chapter-2.md)
+* https://github.com/vikingmute/webpack-basic-starter
+* https://github.com/vikingmute/webpack-for-fools
+* https://zhuanlan.zhihu.com/FrontendMagazine/20367175
+* https://github.com/webpack-china/awesome-webpack-cn/#mortar_board-webpack入门

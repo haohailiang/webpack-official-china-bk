@@ -10,6 +10,5 @@
 
 ## Usage
 ```
-npm install --save-dev webpack-dev-server
-webpack
+npm install --save-dev jquery
 ```

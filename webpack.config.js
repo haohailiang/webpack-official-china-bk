@@ -8,15 +8,13 @@ module.exports = {
     filename: '[name].bundle.js'
   },
   module: {
-    rules: [
-      {
-        test: /\.css$/,
-        use: ExtractTextPlugin.extract({
-          fallback: "style-loader",
-          use: "css-loader"
-        })
-      }
-    ]
+      loaders: [{
+          test: /\.css/,
+          loader:  'style-loader!css-loader'
+      }, {
+        test: /\.(png|jpg|jpeg)$/,
+        loader: 'url-loader?limit=10000&name=build/[name].[ext]'
+      }]
   },
   plugins: [
     new HtmlWebpackPlugin({

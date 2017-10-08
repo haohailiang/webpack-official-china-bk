@@ -3,4 +3,9 @@ require('./../css/cssB.css');
 
 document.open();
 document.write('<h1>我爱你中国</h1><h2>我爱你中国</h2>');
+
+var img = document.createElement("img");
+img.src = require("../image/dog.jpeg");
+document.body.appendChild(img);
+
 document.close();

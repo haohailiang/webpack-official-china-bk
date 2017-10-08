@@ -10,7 +10,6 @@
 
 ## Usage
 ```
-npm install html-webpack-plugin --save-dev
+npm install --save-dev webpack-dev-server
 webpack
 ```
-[HtmlWebpackPlugin定制](https://github.com/jantimon/html-webpack-plugin#configuration)

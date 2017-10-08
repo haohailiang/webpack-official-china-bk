@@ -23,7 +23,6 @@ module.exports = {
     },
     // 添加 plugin 的配置选项
     plugins: [
-        new webpack.optimize.UglifyJsPlugin(),
         new HtmlWebpackPlugin({
             title: '自动生成HTML文件',
         })

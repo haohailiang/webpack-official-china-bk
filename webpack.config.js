@@ -23,8 +23,14 @@ module.exports = {
     },
     // 添加 plugin 的配置选项
     plugins: [
+        // 新添加的内置的 plugin！
+        new webpack.HotModuleReplacementPlugin(),
         new HtmlWebpackPlugin({
             title: '自动生成HTML文件',
         })
-    ]
+    ],
+    devServer: {
+        compress: true, // 让 dev－server 启动 gzip压缩
+        hot: true, // 让 dev－server 启动 HMR 功能
+    }
 }

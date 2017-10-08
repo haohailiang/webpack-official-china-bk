@@ -1,4 +1,5 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
   entry: './src/js/index.js',
@@ -7,16 +8,20 @@ module.exports = {
     filename: '[name].bundle.js'
   },
   module: {
-      loaders: [
-        {
-          test: /\.(png|jpg)$/,
-          loader: 'url-loader?limit=10000&name=build/[name].[ext]'
-        }
-      ]
+    rules: [
+      {
+        test: /\.css$/,
+        use: ExtractTextPlugin.extract({
+          fallback: "style-loader",
+          use: "css-loader"
+        })
+      }
+    ]
   },
   plugins: [
     new HtmlWebpackPlugin({
       title: '配置文件修改名字'
     }),
+    new ExtractTextPlugin("styles.css"),
   ]
-};
+}

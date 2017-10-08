@@ -8,6 +8,5 @@
 
 # 用到的命令
 ```
-npm i file-loader less --save-dev
-npm i style-loader css-loader less-loader url-loader --save-dev
+npm install extract-text-webpack-plugin --save-dev
 ```
